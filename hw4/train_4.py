@@ -62,7 +62,7 @@ test_x = [list(jieba.cut(emoji.demojize(line.rstrip("\n").split(",",maxsplit=1)[
 
 # Word to Vector
 w_model = Word2Vec(np.concatenate((x,x_vali,test_x)), size=250, sg=1, iter=7, max_final_vocab=35000)
-w_model.save("word2vec4.model")
+w_model.save("word2vec_4.model")
 x_vec = []
 x_vali_vec = []
 for sent in x:
